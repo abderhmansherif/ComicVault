@@ -1,0 +1,7 @@
+appsettings.json
+Properties/
+Obj/
+*.csproj
+Comics Reader.png
+*.drawio
+*.Development.json
