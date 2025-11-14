@@ -7,11 +7,13 @@ namespace ComicsWebApi.Models
 {
     public class Bookmark
     {
-        public string ComicId { get; set; }
-        public string PageId { get; set; }
+        public required string ComicId { get; set; }
+        public required int PageId { get; set; }
+        public required string UserId { get; set; }
         public DateTime AddedAt { get; set; }
 
-        public Comic Comic { get; set; }
-        public Page Page { get; set; }
+        public required Comic Comic { get; set; }
+        public required Page Page { get; set; }
+        public required User User { get; set; }
     }
 }
